@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6C32E7F-4930-48DC-B60D-6EB5FD1F7C3E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web</RootNamespace>
+    <AssemblyName>Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".bowerrc" />
+    <None Include=".jshintrc" />
+    <None Include=".travis.yml" />
+    <None Include="app\.bowerrc" />
+    <None Include="app\bower_components\angular-animate\.bower.json" />
+    <None Include="app\bower_components\angular-animate\angular-animate.min.js.map" />
+    <None Include="app\bower_components\angular-animate\bower.json" />
+    <None Include="app\bower_components\angular-animate\package.json" />
+    <None Include="app\bower_components\angular-animate\README.md" />
+    <None Include="app\bower_components\angular-mocks\.bower.json" />
+    <None Include="app\bower_components\angular-mocks\bower.json" />
+    <None Include="app\bower_components\angular-mocks\package.json" />
+    <None Include="app\bower_components\angular-mocks\README.md" />
+    <None Include="app\bower_components\angular-resource\.bower.json" />
+    <None Include="app\bower_components\angular-resource\angular-resource.min.js.map" />
+    <None Include="app\bower_components\angular-resource\bower.json" />
+    <None Include="app\bower_components\angular-resource\package.json" />
+    <None Include="app\bower_components\angular-resource\README.md" />
+    <None Include="app\bower_components\angular-route\.bower.json" />
+    <None Include="app\bower_components\angular-route\angular-route.min.js.map" />
+    <None Include="app\bower_components\angular-route\bower.json" />
+    <None Include="app\bower_components\angular-route\package.json" />
+    <None Include="app\bower_components\angular-route\README.md" />
+    <None Include="app\bower_components\angular\.bower.json" />
+    <None Include="app\bower_components\angular\angular.min.js.gzip" />
+    <None Include="app\bower_components\angular\angular.min.js.map" />
+    <None Include="app\bower_components\angular\bower.json" />
+    <None Include="app\bower_components\angular\package.json" />
+    <None Include="app\bower_components\angular\README.md" />
+    <None Include="app\bower_components\bootstrap\.bower.json" />
+    <None Include="app\bower_components\bootstrap\bower.json" />
+    <None Include="app\bower_components\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <None Include="app\bower_components\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="app\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="app\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="app\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="app\bower_components\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="app\bower_components\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="app\bower_components\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="app\bower_components\bootstrap\less\alerts.less" />
+    <None Include="app\bower_components\bootstrap\less\badges.less" />
+    <None Include="app\bower_components\bootstrap\less\bootstrap.less" />
+    <None Include="app\bower_components\bootstrap\less\breadcrumbs.less" />
+    <None Include="app\bower_components\bootstrap\less\button-groups.less" />
+    <None Include="app\bower_components\bootstrap\less\buttons.less" />
+    <None Include="app\bower_components\bootstrap\less\carousel.less" />
+    <None Include="app\bower_components\bootstrap\less\close.less" />
+    <None Include="app\bower_components\bootstrap\less\code.less" />
+    <None Include="app\bower_components\bootstrap\less\component-animations.less" />
+    <None Include="app\bower_components\bootstrap\less\dropdowns.less" />
+    <None Include="app\bower_components\bootstrap\less\forms.less" />
+    <None Include="app\bower_components\bootstrap\less\glyphicons.less" />
+    <None Include="app\bower_components\bootstrap\less\grid.less" />
+    <None Include="app\bower_components\bootstrap\less\input-groups.less" />
+    <None Include="app\bower_components\bootstrap\less\jumbotron.less" />
+    <None Include="app\bower_components\bootstrap\less\labels.less" />
+    <None Include="app\bower_components\bootstrap\less\list-group.less" />
+    <None Include="app\bower_components\bootstrap\less\media.less" />
+    <None Include="app\bower_components\bootstrap\less\mixins.less" />
+    <None Include="app\bower_components\bootstrap\less\modals.less" />
+    <None Include="app\bower_components\bootstrap\less\navbar.less" />
+    <None Include="app\bower_components\bootstrap\less\navs.less" />
+    <None Include="app\bower_components\bootstrap\less\normalize.less" />
+    <None Include="app\bower_components\bootstrap\less\pager.less" />
+    <None Include="app\bower_components\bootstrap\less\pagination.less" />
+    <None Include="app\bower_components\bootstrap\less\panels.less" />
+    <None Include="app\bower_components\bootstrap\less\popovers.less" />
+    <None Include="app\bower_components\bootstrap\less\print.less" />
+    <None Include="app\bower_components\bootstrap\less\progress-bars.less" />
+    <None Include="app\bower_components\bootstrap\less\responsive-utilities.less" />
+    <None Include="app\bower_components\bootstrap\less\scaffolding.less" />
+    <None Include="app\bower_components\bootstrap\less\tables.less" />
+    <None Include="app\bower_components\bootstrap\less\theme.less" />
+    <None Include="app\bower_components\bootstrap\less\thumbnails.less" />
+    <None Include="app\bower_components\bootstrap\less\tooltip.less" />
+    <None Include="app\bower_components\bootstrap\less\type.less" />
+    <None Include="app\bower_components\bootstrap\less\utilities.less" />
+    <None Include="app\bower_components\bootstrap\less\variables.less" />
+    <None Include="app\bower_components\bootstrap\less\wells.less" />
+    <None Include="app\bower_components\bootstrap\LICENSE" />
+    <None Include="app\bower_components\bootstrap\package.json" />
+    <None Include="app\bower_components\bootstrap\README.md" />
+    <None Include="app\bower_components\bootstrap\test-infra\npm-shrinkwrap.canonical.json" />
+    <None Include="app\bower_components\bootstrap\test-infra\README.md" />
+    <None Include="app\bower_components\bootstrap\test-infra\sauce_browsers.yml" />
+    <None Include="app\bower_components\bootstrap\test-infra\uncached-npm-install.sh" />
+    <None Include="app\bower_components\jquery\.bower.json" />
+    <None Include="app\bower_components\jquery\bower.json" />
+    <None Include="app\bower_components\jquery\dist\jquery.min.map" />
+    <None Include="app\bower_components\jquery\src\sizzle\dist\sizzle.min.map" />
+    <None Include="app\css\.gitkeep" />
+    <None Include="app\img\.gitkeep" />
+    <None Include="app\partials\.gitkeep" />
+    <None Include="app\phones\dell-streak-7.json" />
+    <None Include="app\phones\dell-venue.json" />
+    <None Include="app\phones\droid-2-global-by-motorola.json" />
+    <None Include="app\phones\droid-pro-by-motorola.json" />
+    <None Include="app\phones\lg-axis.json" />
+    <None Include="app\phones\motorola-atrix-4g.json" />
+    <None Include="app\phones\motorola-bravo-with-motoblur.json" />
+    <None Include="app\phones\motorola-charm-with-motoblur.json" />
+    <None Include="app\phones\motorola-defy-with-motoblur.json" />
+    <None Include="app\phones\motorola-xoom-with-wi-fi.json" />
+    <None Include="app\phones\motorola-xoom.json" />
+    <None Include="app\phones\nexus-s.json" />
+    <None Include="app\phones\phones.json" />
+    <None Include="app\phones\samsung-galaxy-tab.json" />
+    <None Include="app\phones\samsung-gem.json" />
+    <None Include="app\phones\samsung-mesmerize-a-galaxy-s-phone.json" />
+    <None Include="app\phones\samsung-showcase-a-galaxy-s-phone.json" />
+    <None Include="app\phones\samsung-transform.json" />
+    <None Include="app\phones\sanyo-zio.json" />
+    <None Include="app\phones\t-mobile-g2.json" />
+    <None Include="app\phones\t-mobile-mytouch-4g.json" />
+    <None Include="bower.json" />
+    <None Include="LICENSE" />
+    <None Include="package.json" />
+    <None Include="README.md" />
+    <None Include="scripts\private\old\format-json.sh" />
+    <None Include="scripts\private\old\goto_step.bat" />
+    <None Include="scripts\private\old\goto_step.sh" />
+    <None Include="scripts\private\old\README.md" />
+    <None Include="scripts\private\old\snapshot.sh" />
+    <None Include="scripts\private\push-to-github.sh" />
+    <None Include="scripts\private\README.md" />
+    <None Include="scripts\private\retag.sh" />
+    <None Include="scripts\private\test-all.sh" />
+    <None Include="scripts\private\update-gh-pages.sh" />
+    <None Include="scripts\update-repo.sh" />
+    <None Include="test\e2e\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="app\bower_components\angular-animate\angular-animate.js" />
+    <Content Include="app\bower_components\angular-animate\angular-animate.min.js" />
+    <Content Include="app\bower_components\angular-animate\index.js" />
+    <Content Include="app\bower_components\angular-mocks\angular-mocks.js" />
+    <Content Include="app\bower_components\angular-mocks\ngAnimateMock.js" />
+    <Content Include="app\bower_components\angular-mocks\ngMock.js" />
+    <Content Include="app\bower_components\angular-mocks\ngMockE2E.js" />
+    <Content Include="app\bower_components\angular-resource\angular-resource.js" />
+    <Content Include="app\bower_components\angular-resource\angular-resource.min.js" />
+    <Content Include="app\bower_components\angular-resource\index.js" />
+    <Content Include="app\bower_components\angular-route\angular-route.js" />
+    <Content Include="app\bower_components\angular-route\angular-route.min.js" />
+    <Content Include="app\bower_components\angular-route\index.js" />
+    <Content Include="app\bower_components\angular\angular-csp.css" />
+    <Content Include="app\bower_components\angular\angular.js" />
+    <Content Include="app\bower_components\angular\angular.min.js" />
+    <Content Include="app\bower_components\angular\index.js" />
+    <Content Include="app\bower_components\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="app\bower_components\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="app\bower_components\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="app\bower_components\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="app\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\bower_components\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="app\bower_components\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="app\bower_components\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\bower_components\bootstrap\Gruntfile.js" />
+    <Content Include="app\bower_components\bootstrap\grunt\bs-glyphicons-data-generator.js" />
+    <Content Include="app\bower_components\bootstrap\grunt\bs-lessdoc-parser.js" />
+    <Content Include="app\bower_components\bootstrap\grunt\bs-raw-files-generator.js" />
+    <Content Include="app\bower_components\bootstrap\grunt\shrinkwrap.js" />
+    <Content Include="app\bower_components\bootstrap\js\affix.js" />
+    <Content Include="app\bower_components\bootstrap\js\alert.js" />
+    <Content Include="app\bower_components\bootstrap\js\button.js" />
+    <Content Include="app\bower_components\bootstrap\js\carousel.js" />
+    <Content Include="app\bower_components\bootstrap\js\collapse.js" />
+    <Content Include="app\bower_components\bootstrap\js\dropdown.js" />
+    <Content Include="app\bower_components\bootstrap\js\modal.js" />
+    <Content Include="app\bower_components\bootstrap\js\popover.js" />
+    <Content Include="app\bower_components\bootstrap\js\scrollspy.js" />
+    <Content Include="app\bower_components\bootstrap\js\tab.js" />
+    <Content Include="app\bower_components\bootstrap\js\tooltip.js" />
+    <Content Include="app\bower_components\bootstrap\js\transition.js" />
+    <Content Include="app\bower_components\bootstrap\test-infra\requirements.txt" />
+    <Content Include="app\bower_components\bootstrap\test-infra\s3_cache.py" />
+    <Content Include="app\bower_components\jquery\dist\jquery.js" />
+    <Content Include="app\bower_components\jquery\dist\jquery.min.js" />
+    <Content Include="app\bower_components\jquery\MIT-LICENSE.txt" />
+    <Content Include="app\bower_components\jquery\src\ajax.js" />
+    <Content Include="app\bower_components\jquery\src\ajax\jsonp.js" />
+    <Content Include="app\bower_components\jquery\src\ajax\load.js" />
+    <Content Include="app\bower_components\jquery\src\ajax\parseJSON.js" />
+    <Content Include="app\bower_components\jquery\src\ajax\parseXML.js" />
+    <Content Include="app\bower_components\jquery\src\ajax\script.js" />
+    <Content Include="app\bower_components\jquery\src\ajax\var\nonce.js" />
+    <Content Include="app\bower_components\jquery\src\ajax\var\rquery.js" />
+    <Content Include="app\bower_components\jquery\src\ajax\xhr.js" />
+    <Content Include="app\bower_components\jquery\src\attributes.js" />
+    <Content Include="app\bower_components\jquery\src\attributes\attr.js" />
+    <Content Include="app\bower_components\jquery\src\attributes\classes.js" />
+    <Content Include="app\bower_components\jquery\src\attributes\prop.js" />
+    <Content Include="app\bower_components\jquery\src\attributes\support.js" />
+    <Content Include="app\bower_components\jquery\src\attributes\val.js" />
+    <Content Include="app\bower_components\jquery\src\callbacks.js" />
+    <Content Include="app\bower_components\jquery\src\core.js" />
+    <Content Include="app\bower_components\jquery\src\core\access.js" />
+    <Content Include="app\bower_components\jquery\src\core\init.js" />
+    <Content Include="app\bower_components\jquery\src\core\parseHTML.js" />
+    <Content Include="app\bower_components\jquery\src\core\ready.js" />
+    <Content Include="app\bower_components\jquery\src\core\var\rsingleTag.js" />
+    <Content Include="app\bower_components\jquery\src\css.js" />
+    <Content Include="app\bower_components\jquery\src\css\addGetHookIf.js" />
+    <Content Include="app\bower_components\jquery\src\css\curCSS.js" />
+    <Content Include="app\bower_components\jquery\src\css\defaultDisplay.js" />
+    <Content Include="app\bower_components\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Content Include="app\bower_components\jquery\src\css\support.js" />
+    <Content Include="app\bower_components\jquery\src\css\swap.js" />
+    <Content Include="app\bower_components\jquery\src\css\var\cssExpand.js" />
+    <Content Include="app\bower_components\jquery\src\css\var\getStyles.js" />
+    <Content Include="app\bower_components\jquery\src\css\var\isHidden.js" />
+    <Content Include="app\bower_components\jquery\src\css\var\rmargin.js" />
+    <Content Include="app\bower_components\jquery\src\css\var\rnumnonpx.js" />
+    <Content Include="app\bower_components\jquery\src\data.js" />
+    <Content Include="app\bower_components\jquery\src\data\accepts.js" />
+    <Content Include="app\bower_components\jquery\src\data\Data.js" />
+    <Content Include="app\bower_components\jquery\src\data\var\data_priv.js" />
+    <Content Include="app\bower_components\jquery\src\data\var\data_user.js" />
+    <Content Include="app\bower_components\jquery\src\deferred.js" />
+    <Content Include="app\bower_components\jquery\src\deprecated.js" />
+    <Content Include="app\bower_components\jquery\src\dimensions.js" />
+    <Content Include="app\bower_components\jquery\src\effects.js" />
+    <Content Include="app\bower_components\jquery\src\effects\animatedSelector.js" />
+    <Content Include="app\bower_components\jquery\src\effects\Tween.js" />
+    <Content Include="app\bower_components\jquery\src\event.js" />
+    <Content Include="app\bower_components\jquery\src\event\ajax.js" />
+    <Content Include="app\bower_components\jquery\src\event\alias.js" />
+    <Content Include="app\bower_components\jquery\src\event\support.js" />
+    <Content Include="app\bower_components\jquery\src\exports\amd.js" />
+    <Content Include="app\bower_components\jquery\src\exports\global.js" />
+    <Content Include="app\bower_components\jquery\src\intro.js" />
+    <Content Include="app\bower_components\jquery\src\jquery.js" />
+    <Content Include="app\bower_components\jquery\src\manipulation.js" />
+    <Content Include="app\bower_components\jquery\src\manipulation\support.js" />
+    <Content Include="app\bower_components\jquery\src\manipulation\var\rcheckableType.js" />
+    <Content Include="app\bower_components\jquery\src\manipulation\_evalUrl.js" />
+    <Content Include="app\bower_components\jquery\src\offset.js" />
+    <Content Include="app\bower_components\jquery\src\outro.js" />
+    <Content Include="app\bower_components\jquery\src\queue.js" />
+    <Content Include="app\bower_components\jquery\src\queue\delay.js" />
+    <Content Include="app\bower_components\jquery\src\selector-native.js" />
+    <Content Include="app\bower_components\jquery\src\selector-sizzle.js" />
+    <Content Include="app\bower_components\jquery\src\selector.js" />
+    <Content Include="app\bower_components\jquery\src\serialize.js" />
+    <Content Include="app\bower_components\jquery\src\sizzle\dist\sizzle.js" />
+    <Content Include="app\bower_components\jquery\src\sizzle\dist\sizzle.min.js" />
+    <Content Include="app\bower_components\jquery\src\traversing.js" />
+    <Content Include="app\bower_components\jquery\src\traversing\findFilter.js" />
+    <Content Include="app\bower_components\jquery\src\traversing\var\rneedsContext.js" />
+    <Content Include="app\bower_components\jquery\src\var\arr.js" />
+    <Content Include="app\bower_components\jquery\src\var\class2type.js" />
+    <Content Include="app\bower_components\jquery\src\var\concat.js" />
+    <Content Include="app\bower_components\jquery\src\var\hasOwn.js" />
+    <Content Include="app\bower_components\jquery\src\var\indexOf.js" />
+    <Content Include="app\bower_components\jquery\src\var\pnum.js" />
+    <Content Include="app\bower_components\jquery\src\var\push.js" />
+    <Content Include="app\bower_components\jquery\src\var\rnotwhite.js" />
+    <Content Include="app\bower_components\jquery\src\var\slice.js" />
+    <Content Include="app\bower_components\jquery\src\var\strundefined.js" />
+    <Content Include="app\bower_components\jquery\src\var\support.js" />
+    <Content Include="app\bower_components\jquery\src\var\toString.js" />
+    <Content Include="app\bower_components\jquery\src\wrap.js" />
+    <Content Include="app\css\animations.css" />
+    <Content Include="app\css\app.css" />
+    <Content Include="app\img\glyphicons-halflings-white.png" />
+    <Content Include="app\img\glyphicons-halflings.png" />
+    <Content Include="app\img\phones\dell-streak-7.0.jpg" />
+    <Content Include="app\img\phones\dell-streak-7.1.jpg" />
+    <Content Include="app\img\phones\dell-streak-7.2.jpg" />
+    <Content Include="app\img\phones\dell-streak-7.3.jpg" />
+    <Content Include="app\img\phones\dell-streak-7.4.jpg" />
+    <Content Include="app\img\phones\dell-venue.0.jpg" />
+    <Content Include="app\img\phones\dell-venue.1.jpg" />
+    <Content Include="app\img\phones\dell-venue.2.jpg" />
+    <Content Include="app\img\phones\dell-venue.3.jpg" />
+    <Content Include="app\img\phones\dell-venue.4.jpg" />
+    <Content Include="app\img\phones\dell-venue.5.jpg" />
+    <Content Include="app\img\phones\droid-2-global-by-motorola.0.jpg" />
+    <Content Include="app\img\phones\droid-2-global-by-motorola.1.jpg" />
+    <Content Include="app\img\phones\droid-2-global-by-motorola.2.jpg" />
+    <Content Include="app\img\phones\droid-pro-by-motorola.0.jpg" />
+    <Content Include="app\img\phones\droid-pro-by-motorola.1.jpg" />
+    <Content Include="app\img\phones\lg-axis.0.jpg" />
+    <Content Include="app\img\phones\lg-axis.1.jpg" />
+    <Content Include="app\img\phones\lg-axis.2.jpg" />
+    <Content Include="app\img\phones\motorola-atrix-4g.0.jpg" />
+    <Content Include="app\img\phones\motorola-atrix-4g.1.jpg" />
+    <Content Include="app\img\phones\motorola-atrix-4g.2.jpg" />
+    <Content Include="app\img\phones\motorola-atrix-4g.3.jpg" />
+    <Content Include="app\img\phones\motorola-bravo-with-motoblur.0.jpg" />
+    <Content Include="app\img\phones\motorola-bravo-with-motoblur.1.jpg" />
+    <Content Include="app\img\phones\motorola-bravo-with-motoblur.2.jpg" />
+    <Content Include="app\img\phones\motorola-charm-with-motoblur.0.jpg" />
+    <Content Include="app\img\phones\motorola-charm-with-motoblur.1.jpg" />
+    <Content Include="app\img\phones\motorola-charm-with-motoblur.2.jpg" />
+    <Content Include="app\img\phones\motorola-defy-with-motoblur.0.jpg" />
+    <Content Include="app\img\phones\motorola-defy-with-motoblur.1.jpg" />
+    <Content Include="app\img\phones\motorola-defy-with-motoblur.2.jpg" />
+    <Content Include="app\img\phones\motorola-xoom-with-wi-fi.0.jpg" />
+    <Content Include="app\img\phones\motorola-xoom-with-wi-fi.1.jpg" />
+    <Content Include="app\img\phones\motorola-xoom-with-wi-fi.2.jpg" />
+    <Content Include="app\img\phones\motorola-xoom-with-wi-fi.3.jpg" />
+    <Content Include="app\img\phones\motorola-xoom-with-wi-fi.4.jpg" />
+    <Content Include="app\img\phones\motorola-xoom-with-wi-fi.5.jpg" />
+    <Content Include="app\img\phones\motorola-xoom.0.jpg" />
+    <Content Include="app\img\phones\motorola-xoom.1.jpg" />
+    <Content Include="app\img\phones\motorola-xoom.2.jpg" />
+    <Content Include="app\img\phones\nexus-s.0.jpg" />
+    <Content Include="app\img\phones\nexus-s.1.jpg" />
+    <Content Include="app\img\phones\nexus-s.2.jpg" />
+    <Content Include="app\img\phones\nexus-s.3.jpg" />
+    <Content Include="app\img\phones\samsung-galaxy-tab.0.jpg" />
+    <Content Include="app\img\phones\samsung-galaxy-tab.1.jpg" />
+    <Content Include="app\img\phones\samsung-galaxy-tab.2.jpg" />
+    <Content Include="app\img\phones\samsung-galaxy-tab.3.jpg" />
+    <Content Include="app\img\phones\samsung-galaxy-tab.4.jpg" />
+    <Content Include="app\img\phones\samsung-galaxy-tab.5.jpg" />
+    <Content Include="app\img\phones\samsung-galaxy-tab.6.jpg" />
+    <Content Include="app\img\phones\samsung-gem.0.jpg" />
+    <Content Include="app\img\phones\samsung-gem.1.jpg" />
+    <Content Include="app\img\phones\samsung-gem.2.jpg" />
+    <Content Include="app\img\phones\samsung-mesmerize-a-galaxy-s-phone.0.jpg" />
+    <Content Include="app\img\phones\samsung-mesmerize-a-galaxy-s-phone.1.jpg" />
+    <Content Include="app\img\phones\samsung-mesmerize-a-galaxy-s-phone.2.jpg" />
+    <Content Include="app\img\phones\samsung-mesmerize-a-galaxy-s-phone.3.jpg" />
+    <Content Include="app\img\phones\samsung-showcase-a-galaxy-s-phone.0.jpg" />
+    <Content Include="app\img\phones\samsung-showcase-a-galaxy-s-phone.1.jpg" />
+    <Content Include="app\img\phones\samsung-showcase-a-galaxy-s-phone.2.jpg" />
+    <Content Include="app\img\phones\samsung-transform.0.jpg" />
+    <Content Include="app\img\phones\samsung-transform.1.jpg" />
+    <Content Include="app\img\phones\samsung-transform.2.jpg" />
+    <Content Include="app\img\phones\samsung-transform.3.jpg" />
+    <Content Include="app\img\phones\samsung-transform.4.jpg" />
+    <Content Include="app\img\phones\sanyo-zio.0.jpg" />
+    <Content Include="app\img\phones\sanyo-zio.1.jpg" />
+    <Content Include="app\img\phones\sanyo-zio.2.jpg" />
+    <Content Include="app\img\phones\t-mobile-g2.0.jpg" />
+    <Content Include="app\img\phones\t-mobile-g2.1.jpg" />
+    <Content Include="app\img\phones\t-mobile-g2.2.jpg" />
+    <Content Include="app\img\phones\t-mobile-mytouch-4g.0.jpg" />
+    <Content Include="app\img\phones\t-mobile-mytouch-4g.1.jpg" />
+    <Content Include="app\img\phones\t-mobile-mytouch-4g.2.jpg" />
+    <Content Include="app\img\phones\t-mobile-mytouch-4g.3.jpg" />
+    <Content Include="app\img\phones\t-mobile-mytouch-4g.4.jpg" />
+    <Content Include="app\img\phones\t-mobile-mytouch-4g.5.jpg" />
+    <Content Include="app\index.html" />
+    <Content Include="app\js\animations.js" />
+    <Content Include="app\js\app.js" />
+    <Content Include="app\js\controllers.js" />
+    <Content Include="app\js\directives.js" />
+    <Content Include="app\js\filters.js" />
+    <Content Include="app\js\services.js" />
+    <Content Include="app\partials\phone-detail.html" />
+    <Content Include="app\partials\phone-list.html" />
+    <Content Include="scripts\private\old\ScrapeData.js" />
+    <Content Include="test\e2e\scenarios.js" />
+    <Content Include="test\karma.conf.js" />
+    <Content Include="test\protractor-conf.js" />
+    <Content Include="test\unit\controllersSpec.js" />
+    <Content Include="test\unit\directivesSpec.js" />
+    <Content Include="test\unit\filtersSpec.js" />
+    <Content Include="test\unit\servicesSpec.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
